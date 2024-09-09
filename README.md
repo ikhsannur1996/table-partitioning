@@ -97,3 +97,7 @@ This index will speed up queries filtering by `customer_id` for sales in 2023.
 ## Conclusion
 
 Partitioning in PostgreSQL enhances query performance by reducing the data scanned. It's especially useful for time-based data like logs, sales, or events. By using partitioning, you can manage large tables more efficiently.
+
+---
+## References
+- https://www.postgresql.org/docs/current/ddl-partitioning.html
