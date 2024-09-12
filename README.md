@@ -26,10 +26,11 @@ We first create a partitioned `sales` table.
 
 ```sql
 CREATE TABLE sales (
-    id SERIAL PRIMARY KEY,
+    id SERIAL,
     sale_date DATE NOT NULL,
     customer_id INT NOT NULL,
-    amount NUMERIC
+    amount NUMERIC,
+    PRIMARY KEY (id, sale_date)
 ) PARTITION BY RANGE (sale_date);
 ```
 
